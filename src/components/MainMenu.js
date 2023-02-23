@@ -1,8 +1,10 @@
+import Box from '@mui/material/Box'
+
 const MainMenu = () => { 
     return (
-        <nav style={styles.nav}>
+        <Box component="nav" sx={styles.nav}>
             <ul style={styles.ulMenu}>menu...</ul>
-        </nav>
+        </Box>
     )
 }
 
@@ -17,6 +19,4 @@ const styles = {
         listStyleType: 'none'
     }
 }
-
-
 export default MainMenu
