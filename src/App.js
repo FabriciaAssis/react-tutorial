@@ -1,26 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import MainMenu from './components/MainMenu'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bem vindo ao mundo React!
-          <h1>siga-me os bons</h1>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <MainMenu />
+    </>
+  )
 }
 
-export default App;
+export default App
