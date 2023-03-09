@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box'
+import Alert from './Alert' 
 
 const Content = () => {
     return (
@@ -9,6 +10,7 @@ const Content = () => {
             height: 500
         }}>
             <h2>Content</h2>
+            <Alert text="meu Alert" />
         </Box>
     )
 }
