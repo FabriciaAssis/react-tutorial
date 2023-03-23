@@ -1,16 +1,35 @@
 import Box from '@mui/material/Box'
-import Alert from './Alert' 
+import Alert from './Alert'
+import SampleUseState from './SampleUseState'
 
 const Content = () => {
+
     return (
         <Box sx={{
-            background: "#DDD",
-            display: 'flex-center',
-            width: 800,
-            height: 500
+            background: "#EEE",
+            width: 500,
+            padding: '15px'
         }}>
-            <h2>Content</h2>
-            <Alert text="meu Alert" />
+            <h1>Content</h1>
+            
+                <Alert type="success" >
+                    Deu certo!
+                </Alert>
+                <br />
+                <Alert type="error">
+                    Deu Erro!
+                </Alert>
+                <br />
+                <Alert type="info">
+                    Info!
+                </Alert>
+                <br />
+                <Alert type="warning">
+                   Warning!
+                </Alert> 
+
+                <SampleUseState />
+            
         </Box>
     )
 }

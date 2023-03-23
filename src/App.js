@@ -4,7 +4,6 @@ import Header from './components/Header'
 import MainMenu from './components/MainMenu'
 import Sidebar from './components/Sidebar'
 import Content from './components/Content'
-import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,10 +14,11 @@ const App = () => {
         display: 'flex',
       }}>
         <Sidebar />
-        <Content /> 
+        <Content />
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
+
 export default App
