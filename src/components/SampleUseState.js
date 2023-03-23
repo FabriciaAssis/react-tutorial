@@ -3,7 +3,7 @@ import { useState } from 'react'
 const SampleUseState = () => {
 
   const [counter, setCounter] = useState(0)
-  const [name, setName] =  useState('Fulano')
+  const [name, setName] =  useState('Alguem')
 
   console.log('Component log...')
  
@@ -14,9 +14,9 @@ const SampleUseState = () => {
         <button onClick={() => setCounter(counter-1)}>-</button>
         <hr />
 
-        <h2>Olá {name}</h2>
-        <button onClick={() => setName('Renan')}>Renan</button>
-        <button onClick={() => setName('Pedro')}>Pedro</button>
+        <h2>Oii {name}</h2>
+        <button onClick={() => setName('Fabrícia')}>Fabrícia</button>
+        <button onClick={() => setName('Jão')}>Jão</button>
     </div>
   )
 }
