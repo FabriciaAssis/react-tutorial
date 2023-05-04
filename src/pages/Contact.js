@@ -1,9 +1,10 @@
 import Box from '@mui/material/Box'
 import Header from '../components/Header'
+import Content from '../components/Content'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 
-const Error404 = () => {
+const Contact = () => {
   return (
     <>
       <Header />
@@ -11,14 +12,13 @@ const Error404 = () => {
         display: 'flex',
       }}>
         <Sidebar />
-        <Box>
-            <h1>Opsss... Página não encontrada!</h1>
-            <p>Verifique se a URL está correta.</p>
-        </Box>
+        <Content title="Contato">
+            <p>Esta é a página Contato!</p>
+        </Content>
       </Box>
       <Footer />
     </>
   )
 }
 
-export default Error404
+export default Contact
